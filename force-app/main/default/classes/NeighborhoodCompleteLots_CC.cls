@@ -1,11 +1,11 @@
 public class NeighborhoodCompleteLots_CC {
-    public Id curId {get; set;}
+    //public Id curId {get; set;}
     
     
     
     //Grab the Id of the Neighborhood record detail page the user is currently on, to be used in the SOQL query.
     public NeighborhoodCompleteLots_CC(){
-        this.curId = ApexPages.currentPage().getParameters().get('id');
+        //this.curId = ApexPages.currentPage().getParameters().get('id');
     }
     
     //Get a list of all the 'Spec' houses that are 'Construction Complete'
@@ -20,7 +20,8 @@ public class NeighborhoodCompleteLots_CC {
                                               WHERE Home_Type__c = 'Spec' AND Status__c = 'Construction Complete'
                                               ORDER BY Name ASC) 
                                             FROM Neighborhood__c
-                                            WHERE Id = :curId]){
+                                            ORDER BY Name]){
+                                            //WHERE Id = :curId
                                                 
                                                 
                                                 for(Lot__c lot : hood.Lots__r){

@@ -48,6 +48,7 @@
         <customTab>Realtor_Customer_Relationship</customTab>
         <customTab>Lot_For_Sale</customTab>
         <customTab>Recent_Buyers</customTab>
+        <customTab>Completed_Spec_Homes</customTab>
         <defaultTab>home</defaultTab>
         <standardTab>home</standardTab>
     </tabs>
