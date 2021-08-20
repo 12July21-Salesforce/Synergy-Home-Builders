@@ -73,6 +73,13 @@
 		<name>Network</name>
 	</types>
 	<types>
+		<members>Admin</members>
+		<members>Custom-Construction</members>
+		<members>Custom-Marketing</members>
+		<members>Home Builder Profile</members>
+		<name>Profile</name>
+	</types>
+	<types>
 		<members>Metric.Completion</members>
 		<members>Metric.Progress</members>
 		<name>RecordType</name>
